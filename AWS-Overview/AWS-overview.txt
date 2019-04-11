@@ -1,0 +1,29 @@
+Services you need to now to pass your AWS SA exam:
+	
+	Bread and Butter:
+	- Compute
+	- Storage
+	- Database
+	- Network and Content Delivery (Very Imp)
+	- Security, Identity & Compliance
+
+	Minor Services:
+	- Desktop and App streaming
+	- Analytics
+	- Machine Learning
+	- Migration and Transfer
+	- Management and Governance
+
+
+- A region is is a physical location in the world which consists of two or more Availability Zone (AZs).
+- An AZ is one or more discrete data centers with redundant power and networking & connectivity, housed in seperate facilities.
+- Edge locations are endpoints for AWS which are used for caching conent. Typically this consists of CloudFront, Amazon's CDN	
+
+Signing Up for AWS:
+
+Basic Plan - Free
+Developer Plan - $29/month  (12 hour response time)
+Business Plan - $100/month (1 hour response time)
+
+Enterprise Level Suppoer - $15000/month (critical)
+
