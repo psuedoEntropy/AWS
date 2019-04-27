@@ -44,3 +44,4 @@ Roles
 	- You create roles and then assign them to AWS resources.
 	- A role is a way to allow one part of AWS service to do something with another part of AWS service
 	- S3-Admin role to EC2 Server (that EC2 server can now talk to S3 buckets)
+
