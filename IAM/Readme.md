@@ -14,7 +14,8 @@
 - Multifactor Authentication.
 
 - Provides Temporary access to users/devices and services where necessary.
-		- mobile end users storing data to your AWS account, only give access when they're using the app
+
+        - mobile end users storing data to your AWS account, only give access when they're using the app
 		- we can also have SMS based MFA integrated with the end-user login using Identity Federation
 
 - Allows you to set up your own password rotation policy.
@@ -57,7 +58,7 @@ they give permissions to as to what a Role/Group/User is able to do.
 - IAM is universal, It does not apply to regions at this time.
 - The "root account" is simply the account created when first your AWS account. It has complete admin access.
 - New users have no permission when first created.
-- New users are assigned Access Key ID & Secret access key when first created -- For programatic access.
+- New users are assigned Access Key ID & Secret access key when first created -- For programmatic access.
 - These are not the same as password. You can't use Access Key and Secret Access Key to Login in to the console. You can use this to access AWS via APIs and Command Line.
 - You only get to view these once. If you lose them, you have to regenerate them. So save them in a secure location.
 - Always set up MFA on your root account.
