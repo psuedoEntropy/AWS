@@ -35,8 +35,11 @@
 
 ## Policies  == Permissions
 - Policies are made up of documents called Policy documents. These documents are in a format called JSON, and
-theey give permissions to as to what a Role/Group/User is able to do
+they give permissions to as to what a Role/Group/User is able to do.
 - By default, IAM users, groups, and roles have no permission.
+- Managed policies are managed either by you (these are called customer managed policies) or by AWS (these are called AWS managed policies).
+
+
 
 
 ## Roles
