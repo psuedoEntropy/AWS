@@ -29,7 +29,7 @@
 - End users such as people, employees of the organization.
 
 
-###### Groups
+## Groups
 - A collection of users. Each user in the group will inherit the permission of the group.
 
 
