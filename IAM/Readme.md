@@ -1,6 +1,6 @@
 ## IAM
 
-######IAM allows you to manage users and their level of access to the AWS Console.
+###### IAM allows you to manage users and their level of access to the AWS Console.
 
 - Centrailsed control of your AWS account.
 
@@ -29,17 +29,17 @@
 	- End users such as people, employees of the organization.
 
 
-Groups
+###### Groups
 	- A collection of users. Each user in the group will inherit the permission of the group.
 
 
-Policies  ==> Permissions
+###### Policies  == Permissions
 	- Policies are made up of documents called Policy documents. These documents are in a format called JSON, and
 	theey give permissions to as to what a Role/Group/User is able to do
 	- By default, IAM users, groups, and roles have no permission.
 
 
-Roles
+###### Roles
 	- You create roles and then assign them to AWS resources.
 	- A role is a way to allow one part of AWS service to do something with another part of AWS service
 	- S3-Admin role to EC2 Server (that EC2 server can now talk to S3 buckets)
