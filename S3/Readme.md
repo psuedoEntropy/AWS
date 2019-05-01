@@ -6,7 +6,7 @@
 - Files can be 0 Bytes to 5 TB, and unlimited storage
 - S3 is a safe place to store your files.
 - S3 is a universal namespace, bucket names should be unique globally.
-- https::/s3.amazonaws.com/<bucket-name>/<file-name>
+- https::/s3.amazonaws.com/<bucket-name/<file-name
 - HTTP 200 code when upload successful.
 - Object consists of :
 		- key (Name of the object)
@@ -19,6 +19,22 @@
 ### Data Consistency Model
 - Read after write consistency for PUTS of new objects (Immediate available)
 - Eventual Consistency for overwrite PUTS and DELETES (can take some time to propagate)
+
+### S3 Props
+- Built for 99.99% availability for S3 platform.
+- AMazon gurantees 99.9% availability
+- Amazon guranntees 99.999999999% durability for S3 info (11X9s)
+- MFA Delete available for deleting objects.
+- Secure your data using Access Control List and Bucket policies
+
+### S3 storage classes
+
+| S3 Standard | S3 - Infrequenct access | S3 | S3 |
+|-------------|----|----|----|
+| 99.99% availability 99.999999999% durability,\stored redundantly across multiple devices in multiple facilities and is designed to sustain the loss of 2 facilies concurrently| X | X | X|
+
+
+
 
 
 
