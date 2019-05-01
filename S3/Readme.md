@@ -31,7 +31,8 @@
 
 | S3 Standard | S3 - Infrequenct access | S3 | S3 |
 |-------------|----|----|----|
-| 99.99% availability 99.999999999% durability,\stored redundantly across multiple devices in multiple facilities and is designed to sustain the loss of 2 facilies concurrently| X | X | X|
+| 99.99% availability 99.999999999% durability,\
+stored redundantly across multiple devices in multiple facilities and is designed to sustain the loss of 2 facilies concurrently| X | X | X|
 
 
 
