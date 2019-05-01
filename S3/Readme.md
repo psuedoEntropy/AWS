@@ -29,9 +29,9 @@
 
 ### S3 storage classes
 
-| S3 Standard | S3 - Infrequenct Access | S3 | S3 |
+| S3 Standard | S3 - Infrequenct Access | S3 One Zone IA | S3 Intelligent Tiering |
 |-------------|-------------------------|----|----|
-| 99.99% availability 99.999999999% durability, Stored redundantly across multiple devices in multiple facilities, Designed to sustain the loss of 2 facilies concurrently|99.9% availability 99.999999999% durability, For data that is accessed less frequently but rapid access when needed, Lower fee than S3 but charged a retrieval fee| X | X|
+| 99.99% availability 99.999999999% durability, Stored redundantly across multiple devices in multiple facilities, Designed to sustain the loss of 2 facilies concurrently|99.9% availability 99.999999999% durability, For data that is accessed less frequently but rapid access when needed, Lower fee than S3 but charged a retrieval fee|99.5% availability and 99.999999999% durability, When you wanta lowwer cost option for your IA data but do not require multiple availability zone data resilience|99.9% availability 99.999999999% durability, Designed to optimize cost by moving data to most cost-effective access tier, without performance impact or operational overhead (using ML)|
 
 
 
