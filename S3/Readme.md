@@ -1,6 +1,4 @@
-# S3
-
-## Intro
+# S3 Intro
 
 - S3 is  Object based storage - files store - in buckets.
 - Files can be 0 Bytes to 5 TB, and unlimited storage
@@ -64,7 +62,18 @@
 - Bucket policy is for the whole bucket vs ACL is where can drill down to the object level
 
 
+# S3 Encryption
 
+- By default all newly created buckets are private. You can setup access control to your bucket using 1) Bucket Policies 2) ACL
+- S3 buckets can be configured to create access logs which log all requests made to S3 bucket. This can be sent to another bucket in another account.
+
+** Encryption in Transit ** is achieved by SSL/TLS 
+** Encryption at Rest ** (at server side) is achieved by
+- S3 Managed Keys (Amazon manage the keys for you) SSE-S3
+- AWS Key Management Keys, Managed Keys - SSE-KMS ( You and Amazon manage the keys)
+- Server Side Encryption with Customer provided keys (SSE-C)
+
+** Client side Encryption **: You encrypt the object on your local device and upload it to the S3.
 
 
 
