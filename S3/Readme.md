@@ -75,6 +75,17 @@
 
 ** Client side Encryption **: You encrypt the object on your local device and upload it to the S3.
 
+# S3 Versioning
+
+- Stores all versions of an object (including all writes and even if you delete an object)
+- Great backup tool
+- Once enabled, Versioning can't be disabled, only suspended.
+- Integrates with lifecycle rules
+- Versioning MFA has delete capability, which use multi-factor authentication, can be used to provide an additional layer of security.
+- If you have versioning turned on and making constant changes to large files, the total sie of your bucekts is the sum of all the versions (will increase exponentially)
+- Versioning is ON and you delete the file. AWS will put a delete marker (size = 0). File won't be deleted but a delete marker will be added.
+- You delete that delete marker and your file will be visible in the bucket. Only way to delete the file is to delete all the individual versions.
+
 
 
 
