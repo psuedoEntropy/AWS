@@ -86,10 +86,34 @@
 - Versioning is ON and you delete the file. AWS will put a delete marker (size = 0). File won't be deleted but a delete marker will be added.
 - You delete that delete marker and your file will be visible in the bucket. Only way to delete the file is to delete all the individual versions.
 
+# S3 Lifecycle Transition
+
+- Automates moving objects between different storaged tiers	.
+- You enter a rule name (eg. TranstionToStandardIA)
+- You can filter using prefix / tags for objects you want to transition.
+- Can have different transition to different versions of the objects (within the same rule) eg. Current Versions -  TO S3-IA after 30 days and for Previous versions: Transition to S3 Glaciar Deep Archive after 5 days.
+- Can also expire the objects (both versions) and clean up the incomplete multipart uploads.
+
+# S3 Cross Region Replication
+
+- Requires Versioning to be enabled on both the source and destination bucket
+- Regions must be unique
+- Objects that are already upload in the source bucket won't be replicated automatically (Need to do it through command line)
+- Can choose destination bucket in different AWS Account
+- Takes about a minute to replicate to another region
+- Can change the storage class of the bucket to which the content is being replicated (destination bucket)
+- Can also change the object ownership to destination bucket owner.
+- Need to assign an IAM role while creating replication Rule. One Bucket's access to Another Bucket (IAM Policy)
+- Public setting permissions are also replicated.
+- If you delete the object in the source bucket (Putting a delete marker) It WON'T put a delete marker in the Destination bucket (Won't be replicateds)
+- Even if you delete the latest version, it won't delete the file (or the version) in the destination bucktet
+
+# S3 Transfer Acceleration
 
 
 
-## Misc
+
+# Misc
 
 - Amazon S3 is a simple key-based object store. When you store data, you assign a unique object key that can later be used to retrieve the data.
 - If you're unable to delete the bucket. It might be because you aren't the owner of the bucket or the bucket policy denies the DeleteBucket request. (faced this with Elastic Beanstalk bucket)
