@@ -67,8 +67,8 @@
 - By default all newly created buckets are private. You can setup access control to your bucket using 1) Bucket Policies 2) ACL
 - S3 buckets can be configured to create access logs which log all requests made to S3 bucket. This can be sent to another bucket in another account.
 
-** Encryption in Transit ** is achieved by SSL/TLS 
-** Encryption at Rest ** (at server side) is achieved by
+- **Encryption in Transit** is achieved by SSL/TLS 
+- **Encryption at Rest** (at server side) is achieved by
 - S3 Managed Keys (Amazon manage the keys for you) SSE-S3
 - AWS Key Management Keys, Managed Keys - SSE-KMS ( You and Amazon manage the keys)
 - Server Side Encryption with Customer provided keys (SSE-C)
@@ -124,6 +124,21 @@
 - Snowmobile- Exabyte-Scale data transfer 
 
 - Snowball can import to S3 or Export from S3.
+
+# Storage Gateway
+
+- AWS Storage Gateway is a service that connects an on-premise software appliance with cloud-based storage to provide seamless and secure integration between an organization's on premise IT environment and AWS's storage infrastructure.
+
+- The service enables you to securely store data at AWS cloud for scalable and cost-effective storage. 
+
+- Storage Gateway supports either VMWare ESXi or Microsoft Hyper-V. Once you've installed your gateway and associated with your AWS account through the activation process, you can use the AWS management console to create the storage gateway option that is right for you.
+
+- Three Types of storage Gateways:
+ 1. File Gateway (NFS) - File Gatway (For flat files. stored directly on S3)
+ 2. Volume Gateway (iSCSI)
+ 	- Stored Volumes - Entire Dataset is stored on site and is asynchronously backed up to S3.
+ 	- Cached Volumes - Entire Dataset is stored on S3, and most frequently accessed data is cached on site.
+ 3. Tape Gatway -  Old Tapes if you're using, you can still migrate to AWS using Gateway Virtual Tape Library. 
 
 
 # Misc

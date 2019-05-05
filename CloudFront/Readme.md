@@ -6,8 +6,8 @@
 - **Origin** -  This is the origin of all the files that the CDN will distibute. This can be S3 Bucket, EC2 Instance, ELB, or Route53.
 - **Distribution** - This is the name given to the CDN which consists of collection of Edge Location.
 
-1st user will try to find a page, if it's not on the edge location, it will download it from the origin and save it on the edge location for the Time To Live.
-2nd user queries that page, that page will load fast, because it has been loaded on the Edge location.
+- 1st user will try to find a page, if it's not on the edge location, it will download it from the origin and save it on the edge location for the Time To Live.
+-2nd user queries that page, that page will load fast, because it has been loaded on the Edge location.
 
 - Web Distributions: Typically used for websites.
 - RTMP: Used for Media Streaming (Adbobe Flash Media)
