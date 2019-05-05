@@ -116,6 +116,16 @@
 - You can transfer data to and from this end-point and it'll be quicker uploads and downloads
 
 
+# Snowball
+
+- Snowball is a petabyte-scale transport solution that uses secure appliances to transfer large amounts of data into and out of AWS. Using snowball addresses common challenges with large scale data transfer including high network costs, long transfer times, and security concerns. Transferring data with Snowball is simple, fast, secure and can be as little as 1/5th of the cost of high speed internet.
+
+- Snowball Edge - Comes with compute capabilities, it's like having a mini-aws at your home.
+- Snowmobile- Exabyte-Scale data transfer 
+
+- Snowball can import to S3 or Export from S3.
+
+
 # Misc
 
 - Amazon S3 is a simple key-based object store. When you store data, you assign a unique object key that can later be used to retrieve the data.
