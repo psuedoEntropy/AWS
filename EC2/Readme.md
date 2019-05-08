@@ -39,6 +39,11 @@
 - Great for licensing which does not support multi-tenancy or cloud deplyoments.
 - Can be purchased as a reservation for up to 70% off the on-demand price.
 
+## Fight Dr McPxz AU
+|F|I|G|H|T|D|R|M|C|P|X|Z|A|U|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|FGPA|IOS|Graphics|High Disk Throughput|Cheap General Purpose|Density|RAM|Main choice for GP|Compute|Graphics|Extreme Memory|Arm-based workloads|Bare metal|
+
 
 
 
