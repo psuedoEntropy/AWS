@@ -68,6 +68,50 @@
 
 # EBS
 
+- Amazon Elastic Block Store (EBS) is just a virtual hard-disk on the cloud. 
+- It's not object-based like S3; It's Block-based (as you can see by the name)
+- Block-based means you can install OS on it and softwares as well.
+- EBS Volume is automatically replicated within it's Availability Zone to protect from Component failure.
+- Offers High-availability and durability.
+
+## 5 Different Types of EBS
+
+### General Purpose SSD
+
+- Peformance for Wide Variety of workloads
+- Most work loads
+- API Name: gp2
+- Max IOPS: 16,000
+
+### Provisioned IOPS (SSD)
+
+- Highest performance SSD
+- Database workloads
+- API Name: io1
+- Max IOPS: 64,000
+
+### Throughput optimized HDD
+
+- Low cost HDD Volume designed for throughput intensive workloads
+- Designed for frequently accessed workloads
+- Big data and data warehousing
+- API Name: st1
+- Max IOPS: 500
+
+### Cold HDD
+
+- Lowest cost HDD volume
+- Designed for less frequently accessed workloads
+- File servers
+- API Name: sc1
+- Max IOPS: 250
+
+### EBS Magnetic
+
+- Previous generation HDD
+- Infrequent accessed data workloads
+- Max IOPS: 40-200
+
 
 
 
