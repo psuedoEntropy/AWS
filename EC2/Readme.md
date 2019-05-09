@@ -32,6 +32,7 @@
 - Applications that have flexible start and end times.
 - Appications that are only feasible at very low compute prices.
 - Users with urgent computing needs for large amounts of additional capacity.	
+- If the spot instance is terminated by Amazon EC2, you'll not be charged partial hour of usage. However, if you terminate the instance yourself, you will be charged for any hour in which the instance ran. 
 
 ### Dedicated Hosts pricing is useful for:
 
@@ -42,11 +43,43 @@
 ### Fight Dr McPxz AU
 |F |I |G |H |T |D |R |M |C |P |X |Z |A |U |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|
-|FGPA|IOPS|Graphics|High Disk Throughput|Cheap General Purpose|Density|RAM|Main choice for GP|Compute|Graphics|Extreme Memory|Arm-based workloads|Bare metal|
+|FGPA|IOPS|Graphics|High Disk Throughput|Cheap General Purpose|Density|RAM|Main choice for GP|Compute|Graphics|Extreme Memory|Extreme memory and CPU|Arm-based workloads|Bare metal|
+
+## Exam Tips 1
+
+- Termination protection is turned off by default, you must turn it on.
+- On an EBS-backed instance, the *default action is for the root EBS volume to be deleted* when the instance is terminated.
+- EBS Root volumes of your DEFAULT AMI's can't be encrypted.
+- Additional volumes can be encryped.
+
+
+# Security Groups
+
+- When creating a security group, everything (all inbound) is blocked by default, you can allow Ports ever a CIDR range but can't "Deny".
+
+
+- All outbound traffic is allowed. Security groups are *STATEFUL*
+- If you create an inbound rule allowig traffic in, that traffic is automatically allowed back out again.
+- Changes to security groups take effect immediately.
+- You can't block specific IP addresses using SG, instead we use Network Access Control Lists( NACLs).
+- You can specify rule, but can't deny rule.
+- You can have any number of EC2 instances within a security group.
+- You can also attach more than one security group to an EC2 instance.
+
+# EBS
+
+
+
+
+
+
 
 
 
 
 # Misc
 
-- Root Device volumes are not encrypted by default.
+- Root Device volumes are not encrypted by default. When launching an instance the first team, the root device can't be encrypted at any cost.
+- However you can later encrypt it using snapshots and copying image.
+
+

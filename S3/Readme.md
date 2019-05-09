@@ -148,3 +148,10 @@
 - To upload a file larger than 80 GB, use the AWS CLI, AWS SDK, or Amazon S3 REST API.
 - Multipart upload is a better option for bigger files (AWS recommends any file larger than 100 MB, use multi-part upload)
 - When uploading an object through console, In the set permission tab, there is an option to give (R / W) access to other AWS account for that object.
+- Query in Place --> Sophisticated queries you can run on your S3 buckets without the need to move data into a separate analytics platform.
+- S3 Select, Amazon Athena, and Amazon Redshift Spectrum - these all can be used for querying data in AWS S3.
+- S3 Select uses SQL clauses, like SELECT and WHERE, from objects stored in CSV, JSON, or Apache Parquet format.
+- Athena is serverless, so there is no infrastructure to setup or manage, and you can start analyzing data immediately.
+- While Athena is ideal for quick, ad-hoc querying and integrates with Amazon QuickSight for easy visualization, it can also handle complex analysis, including large joins, window functions, and arrays. 
+- Amazon Redshift Spectrum is a feature of Amazon Redshift that enables you to run queries against exabytes of unstructured data in Amazon S3 with no loading or ETL required.
+- S3 Transfer Acceleration is a better choice if better throughput is required (it adds additional intelligence between the client and the S3 bucket). However if data is less than 1 GB then consider using Amazon CloudFront.
