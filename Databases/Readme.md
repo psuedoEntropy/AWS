@@ -34,6 +34,7 @@
 - Document ==> Row
 - Key-Value Pair (JSON) - NoSQL
 - Unlike RDB, they don't have to have consistencies
+- DynamoDB - Amazon's NoSQL database
 
 ### Data Warehousing 
 
@@ -49,7 +50,7 @@
 
 ### ElastiCache
 
-
+- ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. The service improves the performance of web applications by allowing you to retrieve information from fast, managed, in-memory caches, instead of relying entirely on slower disk based databases. - Memcached & Redis
 
 
 
@@ -62,4 +63,8 @@
 # Misc
 
 - After DB is created you can't change the VPC selection
+- You can now specify the DB Instance Performance Type: 3 different types:
+- ***Standard***: General purpose instances provide a balance of compute, memory, and networking resources, and can be used for a variety of workloads.
+- ***Memory Optimized***: Memory optimized instances are designed to deliver fast performance for workloads that process large data sets in memory.
+- ***Burstable***: Burastable instances are designed to provide a baseline level of CPU performance with the ability to burst to a higher level when required by your workload.
 
