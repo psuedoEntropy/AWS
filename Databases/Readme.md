@@ -33,11 +33,25 @@
 - Collection ==> Table
 - Document ==> Row
 - Key-Value Pair (JSON) - NoSQL
+- Unlike RDB, they don't have to have consistencies
 
 ### Data Warehousing 
 
 - Used for business intelligence (Cognos, Jaspersoft, SQL Server Reporting service, Oracle Hypervision)
 - Used to pull in very large and complex data sets. Usually used by management to do queries on data.
+
+- *OLTP*: Pull up a row (rows) from a Database. (Normal Queries)
+- *OLAP*: Calculation on Data and give you the final result. (Complicated queries)
+
+- Data Warehousing databases use different type of architecture both from a database persepctive and infrastructure layer.
+
+- Amazon's Data Warehouse Solution is called Redshit
+
+### ElastiCache
+
+
+
+
 
 
 
