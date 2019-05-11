@@ -112,6 +112,54 @@
 - Infrequent accessed data workloads
 - Max IOPS: 40-200
 
+## EBS Exam Tips
+
+- Volume of that instance and Instance are always in the same AZ.
+- Let's say you have multiple EBS and want to change the volume type for some. You can do that just by clicking on Modify Volume.
+- Root device volume will be deleted if you delete the instance (since by default delete on termination flag is on). However for additional volumes Delete on Termination flag is off. And those volumes will persist.
+- Snapshots exists on S3. Think of snapshots as a photograph of that disk.
+- Snapshots are point in time of copy of Volumes.
+- Snapshots are incremental - This means that the only the blocks that have changed since your last snapshot are moved to S3.
+- First snapshot takes some time.
+- To create a snapshot of an EBS volume that serves as a root volume, you should stop the instance before taking the snapshot - it will consistence.
+- However you can take a snap while the instance is running.
+- You can create AMI's from both Volumes and Snapshots.
+- You can changes EBS volumes size on the fly, including changing the size and storage type.
+- *Migration1*: To move an EC2 volume from one AZ to another, take a snapshot of it, create an AMI from the snapshot and then use that AMI to launch an EC2 instance in another AZ.
+- *Migration2*: To move an EC2 volume from one region to another, take snapshot of it, create an AMI from the snapshot and then copy that AMI to another region, and use that copied AMI to launch an instance in another Region.
+
+## EBS vs Instance Store
+
+You can select your AMI based on:
+
+- Region
+- Operating System
+- Architecture
+- Launch Permissions
+- Storage for the root device (Root device volume)
+	1. Instance store (Ephermal Storage)
+	2. EBS backed
+
+- *For EBS Volumes*: The root device for an instance launched from AMI is an Amazon EBS volume created from an Amazon EBS Snapshot
+- *For Instance Store Volumes*: The root device for an instance launched from the AMI is an instance store volume created from a template stored in AMazon S3.
+
+- Can't add Instance Store volume afte the instance has been launched, even if the the root device is instance store volume, still can't add those types later.
+
+- You can't even stop an instance-store backed instance. You can reboot the instance or terminate. But you can't stop. Because if the instance is stopped and since it's only an ephermal storage -  All the data will be lost.
+
+## Exams Tips 2
+
+- Instance store volumes are sometimes called Ephemeral Storage.
+- Instance store volumes cannot be stopped, If the underlying host fails, you will lose your data.
+- EBS Backed instance can be stopped. You will not lose data if it is stopped.
+- You can reboot both, you will not lose data.
+- By default, both Root volumes will be deleted on termination. However with EBS volumes, you can tell AWS to keep the root device volume. You can't tell Instance-store backed volume to keep the Volume on termination - It WILL BE deleted.
+
+
+
+
+
+
 
 
 
@@ -125,5 +173,6 @@
 
 - Root Device volumes are not encrypted by default. When launching an instance the first team, the root device can't be encrypted at any cost.
 - However you can later encrypt it using snapshots and copying image.
+- Of the EBS volume, you can only create a SnapShot
 
 
