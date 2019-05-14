@@ -52,6 +52,14 @@
 
 - ElastiCache is a web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. The service improves the performance of web applications by allowing you to retrieve information from fast, managed, in-memory caches, instead of relying entirely on slower disk based databases. - Memcached & Redis
 
+## Exam Tips 1
+
+- RDS runs on virtual machines.
+- You cannot log in to these Operating Systems however.
+- No patching of DB or OS.
+- RDS is not serverless (except Aurora)
+
+
 
 
 
@@ -67,4 +75,13 @@
 - ***Standard***: General purpose instances provide a balance of compute, memory, and networking resources, and can be used for a variety of workloads.
 - ***Memory Optimized***: Memory optimized instances are designed to deliver fast performance for workloads that process large data sets in memory.
 - ***Burstable***: Burastable instances are designed to provide a baseline level of CPU performance with the ability to burst to a higher level when required by your workload.
+- When you create an Amazon Aurora instance, you create a DB cluster which has more than once instances spanning over multiple Availability Zones.
+- Amazon RDS is built using Amazon Elastic Block Storage (EBS). 
+- It has 3 Storage Types
+- Magnetic: Also called standard storage, offers cost-effective storage that is ideal for applications with light I/O requirements.
+- General Purpose (gp2): Faster access than Magnetic. This storage type can provide burst performance to meet spikes and is excellent for small-to-medium sized database.
+- Provisioned IOPS: Designed to meet the needs of I/O intensive workloads, particularly database workloads, that are sensitive to Storage performance and consistenly in random access I/O.
+- When you delete a DB Instance, all automated backups are deleted and cannot be recovered. Manual Snapshots are not deleted.
+- For busy Databases, use Multi-AZ to minimize the performanc impact of a snapshot.
+- Multi-AZ iuses synchronus replication
 
