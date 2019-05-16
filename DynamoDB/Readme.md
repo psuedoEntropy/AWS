@@ -21,4 +21,3 @@
 
 - Needs to read that data within or less than one second.
 - Returns a result that reflects all writes that received a successful response prior to the read.
-
