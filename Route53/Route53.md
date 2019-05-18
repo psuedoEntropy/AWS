@@ -6,9 +6,9 @@
 
 ### Top level domains
 
-.*com*
-.*edu*
-.*gov*
+.*com* | |
+.*edu* | |
+.*gov* | |
 
 ## Second Level Domain
 
