@@ -134,4 +134,5 @@
 - When you delete a DB Instance, all automated backups are deleted and cannot be recovered. Manual Snapshots are not deleted.
 - For busy Databases, use Multi-AZ to minimize the performanc impact of a snapshot.
 - Multi-AZ iuses synchronus replication
+- You can use AWS Config to continuously record configurations changes to Amazon RDS DB Instances, DB Subnet Groups, DB Snapshots, DB Security Groups, and Event Subscriptions and receive notification of changes through Amazon Simple Notification Service (SNS)
 
