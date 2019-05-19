@@ -156,15 +156,18 @@ You can select your AMI based on:
 - By default, both Root volumes will be deleted on termination. However with EBS volumes, you can tell AWS to keep the root device volume. You can't tell Instance-store backed volume to keep the Volume on termination - It WILL BE deleted.
 
 
+# EBS Encryption
+- Snapshots of encrypted volume are going to be encrypted.
+- Volumes restored from encrypted snapshots are encrypted automatically.
+- You can share snapshots, only if they are unencrypted.
+- These snapshots can be shared with other AWS accounts or made public.
 
+### Steps to encrypt the root-device volume.
 
-
-
-
-
-
-
-
+- Create a snapshot of the unencrypted root device volume.
+- Create a copy of the Snapshot and select the encrypt option.
+- Create an AMI from the encrypted Snapshot.
+- Use that AMI to launch a new encrypted instances.
 
 
 
@@ -174,5 +177,8 @@ You can select your AMI based on:
 - Root Device volumes are not encrypted by default. When launching an instance the first team, the root device can't be encrypted at any cost.
 - However you can later encrypt it using snapshots and copying image.
 - Of the EBS volume, you can only create a SnapShot
+- Programmatic Access is not that secure. When you run aws configure and enter your creds.
+- Your Access Key and Secret Access Key ID are stored in aws ec2. It should never be stored there.
+- Recommendation is to use IAM Roles.
 
 

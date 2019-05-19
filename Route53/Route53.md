@@ -81,3 +81,11 @@
 |3/3+2+5|2/3+2+5|5/3+2+5|
 |3/10|2/10|5/10|
 |30%|20%|50%|
+
+- You can associate heath checks with different IP address and create an alaram.
+- If a record health check fails, it will be removed from Route53 until it passed the health check.
+
+# Latency Based Routing
+
+-Will choose the Web Server IP (Record set) based on the least latency experienced by the *User*.
+
