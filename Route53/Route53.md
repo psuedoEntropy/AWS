@@ -75,8 +75,12 @@
 - Allows you to split your traffic based on different weights assigned.
 - 10% to US-EAST-1 and 90% to EU-EAST-2
 - In weighted routing policy you create multiple record set.
+
 |Weight 3 to One IP | Weight 2 to Second IP | Weight 5 to Third IP|
 |-------------------|-----------------------|---------------------|
-|3/3+2+5		    | 2/3+2+5			    | 5/3+2+5|
-|	3/10		    |	2/10			    | 5/10	|
-|	30%			    | 	20%				    | 	50%	|
+|ss|ss|ss|
+
+ljd 
+|3/3+2+5		    | 2/3+2+5| 5/3+2+5|
+|	3/10		    |	2/10| 5/10	|
+|	30%			    | 	20%	| 	50%	|
