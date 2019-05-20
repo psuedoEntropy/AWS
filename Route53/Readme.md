@@ -87,5 +87,29 @@
 
 # Latency Based Routing
 
--Will choose the Web Server IP (Record set) based on the least latency experienced by the *User*.
+- Will choose the Web Server IP (Record set) based on the least latency experienced by the *User*.
+
+# Fail-over Routing Policy
+
+- Primary site in US-EAST-1. Secondary Site in AP-SOUTHEAST-1
+- Active/Passive set up
+- Route53 will monitor the health of your primary Site
+
+- If the primary-health check returns failure, then the users will be directed to failover (secondary)
+
+# Geo-Location Routing Policy
+
+- Geolocation routing lets you choos where your traffic will be sent based on the geographical location of your users.
+- location of users == location from which the DNS queries originate.
+- For ex, you might want all queries from Europe to be routed to a fleet of EC2 instances that are specifically configured for European customers. These servers may have the local language of your European customers and all prices displayed in Euros.
+- Your location can be continents or countries
+
+# Geoproximity Routing (Traffic flow only)
+
+- Geoproximity routing lets Amazon Route53 route traffic to your resources based on the geographical location of your users and your resources. You can alos optionally choose to route more traffic or less to a given resource by specifying a value, known as a bias. A bias shrinks or expands the size of geographic region from which traffic is routed to a resource.
+
+# Multi-Value Answer
+
+- Similar to simple routing policy, however it allows you to put health checks on each record set.
+- So Route53 returns only values for healthy resources.
 
