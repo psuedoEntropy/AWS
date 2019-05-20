@@ -170,6 +170,9 @@ You can select your AMI based on:
 - Use that AMI to launch a new encrypted instances.
 
 
+# EC2 Placement Groups
+
+
 
 
 # Misc
