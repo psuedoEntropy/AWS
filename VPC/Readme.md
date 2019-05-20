@@ -70,4 +70,38 @@
 - NAT instance is acting like a bridge b/w Private Subnet and Internet. SO it's not a source neither a destination.
 
 
+# Exam Tips (NAT INSTANCES)
+
+- When creating a NAT instance, Disable Source/Destination check on the instance.
+- NAT instance must be in a public subnet.
+- There must be a route out of the private subnet to the NAT Instance, in order for this to work.
+- The amount of traffic that NAT instance can support depends on the instance size. If you are bottlenecking, increase the instance size.
+- You can create high-availbility using Autoscaling group, multiple subnets in different AZs, and a script to automate failover.
+- NAT instances are always behind a security group.
+
+# Exam Tips (NAT GATEWAYS)
+
+- Redudant inside the AZ
+- Preffered by the AZ
+- scales automatically
+- No need to patch
+- Not associated with security groups
+- Automatically assigned a public IP address
+- Remember to update your route tables
+- No need to disable Source/Destination check.
+
+- If you have resources in multiple AZs, and they share one NAT gateway. In the event that the NAT gateway's AZ goes down. Resources in other AZs lose internet access. To create an Availability Zone-Independent architecture, create a NAT gateway in each AZ and configure your routing to ensure that resources use the NAT gateway in the same Availability Zone. 
+
+# Exam Tips (NACLs)
+
+- NACLs are going to be evaluted before Security Groups.
+- NACLs are stateless; response to allowed inbound traffic are subject to rules for outbound traffic (& vice versa)
+- Network ACLs have separate inbound and outbound rules, each rule can either deny or allow traffic.
+- Your VPC automatically comes with a default network ACL and by default it allows all outbound and inbound traffic.
+- You can create custom network ACLs, By default, each custom network ACL denies all inbound and outbound traffic until you add rules.
+- Each subnet in your VPC must be associated with a network ACL. If you don't explicitly associate a subnet with a network ACL, the subnet is automatically associated with the default NACL
+- You can block specific IP addresses using NACLs but not using SG
+- You can associate a network ACL with multiple subnet; however a subnet can be associated with only one network ACL at a time. When you associate a network ACL with a subnet, the previous association is removed.
+- Network ACLs contains a numbered list of rules that is evaluated in order, starting with the lowest number rule
+
 
