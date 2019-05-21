@@ -20,6 +20,28 @@
 ### Cross-Zone Load Balaning
 - Cross-zone load balancing distributes traffic evenly across all targets in the Availability Zones enabled for the load balancer.
 
+- If health check of an instance fails, Load Balancer is just going to stop sending traffic to that instance. 
+
+
+
+## Application Load Balancers:
+
+- Your load balancer routes requests to the targets in a target group using the target group settings that you specify, and performs health checks on the targets using the health check settings that you specify.
+
+- Target Type of TargetGroups can be by:
+	1. Instance
+	2. IP
+	3. Lambda Function
+
+# Sticky Sessions
+- Sticky Sessions enable your users to stick to the same instance. Can be useful if you are storing information locally to that instance.
+# Cross Zone Load Balancing
+- Cross Zone Load Balancing enables you to load balance across multiple availability Zones
+# Path Patterns
+- Path patterns allow you to direct traffic to different EC2 instances based on the URL contained in the request.
+
+
+
 
 
 
