@@ -17,6 +17,9 @@
 
 - X-Forwarded-For header the IP address of the User. EC2 instance will get ELB's address as the User address. But in that ELB config, there will be a X-Forwarded-For header which will be the IP Address of the User
 
+### Cross-Zone Load Balaning
+- Cross-zone load balancing distributes traffic evenly across all targets in the Availability Zones enabled for the load balancer.
+
 
 
 
