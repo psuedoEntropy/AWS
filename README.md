@@ -1,8 +1,4 @@
-# Test
+# AWS Solutions Architect - Associate
 
 
-### RE-DO
-
-- EFS (Video and reading)
-- EC2 Placement Groups
-- VPC Endpoint
+#### A Cloud Guru course notes

@@ -112,4 +112,3 @@
 
 - Similar to simple routing policy, however it allows you to put health checks on each record set.
 - So Route53 returns only values for healthy resources.
-

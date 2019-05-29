@@ -143,5 +143,3 @@
 	2. Useful for high throughput workloads (ie lots of network traffic)
 	3. or if you need a stable and reliable connection.
 	4. eg VPN connection keeps dropping out from your datacenter to AWS, use DirectConnect.
-
-# VPC Endpoint

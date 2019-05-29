@@ -28,4 +28,3 @@
 - Visbility timeout maximum is 12 hours.
 - SQS guarantees messages will be delivered at least once.
 - Amazon SQS long polling is a way to retrieve messages from your Amazon SQS queues. While regular short polling returns immediately (even if the message queue being polled is empty), long polling doesn;t return a response until a message arrives in the message queue, or the long poll times out.
-
