@@ -14,4 +14,3 @@
 
 - Edge Locations are not just read-only. You can write to the edge locations as well (put object on them)
 - You can clear cached object but you will be charged for it.
-
